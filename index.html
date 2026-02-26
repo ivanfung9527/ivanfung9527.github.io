@@ -1,1 +1,225 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><title>React App</title><script defer="defer" src="/static/js/main.e50dd94e.js"></script><link href="/static/css/main.073c9b0a.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Ivan Fung - Analytics Engineer specializing in distributed systems, ETL pipelines, and data architecture" />
+    <title>Ivan Fung - Analytics Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: #f9f9f9;
+        }
+        header {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .title {
+            color: #7f8c8d;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .linkedin {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #0077b5;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        .linkedin:hover {
+            background: #005885;
+        }
+        section {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+        .projects {
+            list-style: none;
+        }
+        .project {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 4px;
+            border-left: 4px solid #3498db;
+        }
+        .project h3 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        .project a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .project a:hover {
+            text-decoration: underline;
+        }
+        .project p {
+            color: #555;
+            margin-top: 8px;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .skill-tag {
+            background: #3498db;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
+        .bio {
+            color: #555;
+            line-height: 1.8;
+        }
+        .bio strong {
+            color: #2c3e50;
+        }
+        ul.experience {
+            list-style: none;
+            margin-top: 15px;
+        }
+        ul.experience li {
+            margin-bottom: 20px;
+            padding-left: 20px;
+            border-left: 3px solid #3498db;
+        }
+        ul.experience li strong {
+            color: #2c3e50;
+            font-size: 1.1em;
+        }
+        ul.experience li .role {
+            color: #7f8c8d;
+        }
+        ul.experience ul {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+        ul.experience ul li {
+            margin-bottom: 8px;
+            padding-left: 0;
+            border-left: none;
+            list-style: disc;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Ivan Fung</h1>
+        <p class="title">Analytics Engineer</p>
+        <a href="https://www.linkedin.com/in/ivan-cyfung/" class="linkedin" target="_blank">Connect on LinkedIn</a>
+    </header>
+
+    <section>
+        <h2>Projects</h2>
+        <ul class="projects">
+            <li class="project">
+                <h3><a href="https://github.com/ivanfung9527/aqwarnings_shiny" target="_blank">BC Air Quality Warnings Shiny App</a></h3>
+                <p>Enhanced RShiny application for BC Government's air quality warning system with colour-coded alerts, bylaw parameters, and code standardization.</p>
+            </li>
+            <li class="project">
+                <h3><a href="https://github.com/ivanfung9527/fsp_arfima" target="_blank">ARFIMA Time Series Analysis</a></h3>
+                <p>AutoRegressive Fractionally Integrated Moving Average models for long-memory time series forecasting and analysis.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>About</h2>
+        <div class="bio">
+            <p><strong>Analytics Engineer</strong> with experience designing scalable distributed data systems in hyperscale technology and financial regulatory environments. Combines statistical training with hands-on engineering expertise in Spark, Python, and Airflow to build high-volume ETL pipelines, optimize data models, and maintain mission-critical datasets with SLA governance.</p>
+        </div>
+
+        <div class="skills">
+            <span class="skill-tag">R</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">Spark</span>
+            <span class="skill-tag">Airflow</span>
+            <span class="skill-tag">ETL/ELT</span>
+            <span class="skill-tag">Data Architecture</span>
+            <span class="skill-tag">Distributed Systems</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Hive</span>
+            <span class="skill-tag">Dremio</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Kubernetes</span>
+        </div>
+    </section>
+
+    <section>
+        <h2>Experience</h2>
+        <ul class="experience">
+            <li>
+                <strong>Meta</strong> <span class="role">• Data Engineer • Apr 2024 - Present</span>
+                <ul>
+                    <li>Built Spark SQL + Python pipelines using Airflow orchestration</li>
+                    <li>Processed terabytes of Messenger event data daily</li>
+                    <li>Optimized join logic and transformation strategy achieving 33% runtime improvement</li>
+                    <li>Supported 5 executive dashboards adopted by data scientists and leadership</li>
+                    <li>Managed and monitored 50+ production datasets</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Hong Kong Monetary Authority</strong> <span class="role">• Data Engineer • Nov 2020 - Nov 2022</span>
+                <ul>
+                    <li>Designed and delivered 50+ ETL pipelines</li>
+                    <li>Automated ingestion using Azure Functions</li>
+                    <li>Eliminated 90% of manual reporting via Tableau dashboards</li>
+                    <li>Led migration from PostgreSQL to Dremio achieving 30% performance gain</li>
+                    <li>Orchestrated workflows using Airflow</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <ul class="experience">
+            <li>
+                <strong>Postgraduate Diploma in Information and Communication Technology</strong>
+                <p>Douglas College, Canada</p>
+            </li>
+            <li>
+                <strong>Bachelor of Statistics</strong>
+                <p>The Chinese University of Hong Kong</p>
+            </li>
+        </ul>
+    </section>
+</body>
+
+</html>
